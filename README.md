@@ -23,4 +23,4 @@ python GenerateEmbeddings.py $text $outputdir doc2vec $dim $nCPUs
 ```
 
 ### References
-This script was put together based on [https://gist.github.com/codekansas/15b3c2a2e9bc7a3c345138a32e029969](this for word embeddings) and [http://linanqiu.github.io/2015/10/07/word2vec-sentiment/](this for doc embeddings).
+This script was put together based on [this for word embeddings](https://gist.github.com/codekansas/15b3c2a2e9bc7a3c345138a32e029969) and [this for doc embeddings](http://linanqiu.github.io/2015/10/07/word2vec-sentiment/).
