@@ -6,7 +6,7 @@ The script expects the following arguments
 - **output directory** to dump the results as **_embeddigns.npz*.
 - **type** of embeddings to train ('word2vec' or 'doc2vec').
 - **dimension** size of embeddings
-- **Number of CPUS** to parallelize the process. *Note that if you use more than a single CPU for training then the random initializations may not be the same if you ran the script twice, therefore your resulting embeddigns may not be the same. This can be an issue if you care to reproduce results.*
+- **Number of CPUS** to parallelize the process. *Note that if you use more than a single CPU for training then the random initializations may not be the same if you ran the script twice, therefore your resulting embeddings may not be the same. This can be an issue if you care to reproduce results.*
 
 ### Word Embeddings
 To generate word embeddings run:
@@ -21,3 +21,6 @@ To generate embeddings over a sequence of words (from the beginning '^' to the e
 ```
 python GenerateEmbeddings.py $text $outputdir doc2vec $dim $nCPUs
 ```
+
+### References
+This script was put together based on [[https://gist.github.com/codekansas/15b3c2a2e9bc7a3c345138a32e029969][this for word embeddings] and [[http://linanqiu.github.io/2015/10/07/word2vec-sentiment/][this for doc embeddings].
