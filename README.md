@@ -6,7 +6,7 @@ The script expects the following arguments
 - **output directory** to dump the results as **_embeddigns.npz*.
 - **type** of embeddings to train ('word2vec' or 'doc2vec').
 - **dimension** size of embeddings
-- **Number of CPUS** to parallelize the process. *Note that if you use more than a single CPU for training then the random initializations may not be the same if you ran the script twice, therefore your resulting embeddings may not be the same. This can be an issue if you care to reproduce results.*
+- **number of CPUS** to utilize for parallelization. *Note that if you use more than a single CPU for training then the random initializations may not be the same if you ran the script twice, therefore your resulting embeddings may not be the same. This can be an issue **if you care to reproduce results**.*
 
 ### Word Embeddings
 To generate word embeddings run:
